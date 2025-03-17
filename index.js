@@ -8,7 +8,7 @@ app.get('/', (req,res)=>{res.send("Welcome")})
 
 app.listen(1234, ()=>{console.log("Server Connected")})
 
-mongoose.connect('mongodb://localhost:27017/bank').then(()=>{console.log("DB Connected")})
+mongoose.connect('mongodb+srv://veera:veera@cluster0.ml7o6.mongodb.net/bank').then(()=>{console.log("DB Connected")})
 
 let data=new mongoose.Schema({
     name:String,
